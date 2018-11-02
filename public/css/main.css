@@ -1,0 +1,186 @@
+body{
+    background-color: black;
+    padding-top: 2%;
+}
+
+.header-judul{
+    align-content: center;
+    padding-left: 43%;
+    height: 50%;
+}
+
+.header-judul img{
+    margin-top: 2%;
+    width: 25%;
+    height: 35%;
+}
+
+.navbar{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a{
+    font-family: Arial;
+    font-size: 100%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    background-color: orangered;
+    border: 0.1vw solid lightslategray;
+}
+
+.navbar a:hover{
+    background: white;
+    color: orangered;
+}
+
+.body{
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    background-color: indianred;
+}
+
+.body-left{
+    width: 25%;
+    background-color: white;
+}
+
+.body-right{
+    width: 75%;
+    background-color: orangered;
+    border-left: 0.2vw solid black;
+}
+
+.body-right h1{
+
+    text-align: center;
+    color: black;
+    font-family: Arial;
+    width: 100%;
+    background-color: white;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.footer{
+    height: 20%;
+    background-color: white;
+    display: flex;
+}
+
+.footer-left{
+    border: 0.1vw solid darkgray;
+    width: 50%;
+}
+
+.footer-right{
+    border: 0.1vw solid darkgray;
+    width: 50%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+    background: #a94442;
+    color: white;
+}
+
+.column-aboutUs {
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column-aboutUs {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card-aboutUs {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-aboutUs img{
+    width: 100%;
+}
+
+/* Some left and right padding inside the container */
+.container-aboutUs {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container-aboutUs::after, .row-aboutUs::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
